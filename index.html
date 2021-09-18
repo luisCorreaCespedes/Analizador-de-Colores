@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/brain-browser.min.js"></script>
+    <title>Analizador de Colores</title>
+</head>
+<body>
+
+    <div class="card text-center mt-5">
+        <div class="card-header">
+            <h3>Analizador de Colores</h3>
+        </div>
+        <div class="card-body">
+            <hr>
+            <h5 class="card-title" id="resultado">No hay nada que analizar...</h5>
+            <hr>
+            <p class="card-text">
+                <h5>Seleccione un color</h5>
+                <input class="rounded" type="color" id="hexadecimal" value="#FFFFFF">
+            </p>
+            <button class="btn btn-dark" id="btnAnalizar">Analizar color</button>
+        </div>
+        <div class="card-footer text-muted">
+            INSTRUCCIONES: Seleccione un color del 'ColorPicker' <br>
+            y luego presione el botón 'Analizar Color'. <br> <br>
+
+            <em>
+                Esta Mini Inteligencia Artificial determina mediante <br>
+                Machine Learning si el color seleccionado es Claro o Oscuro.
+            </em>
+        </div>
+    </div>
+</body>
+</html>
