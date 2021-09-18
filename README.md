@@ -14,6 +14,6 @@ _[Analizador](https://analizadordecolores.netlify.app)_
 
 * Si les gusta el proyecto pongan su ⭐️
 * Mini aplicación hecha con muchas tazas de café ☕. 
-* Gracias a todos mis amigos por apoyarme a crear videojuegos aunque sean simples 🤓.
+* Gracias a todos mis amigos por apoyarme a crear aplicaciones aunque sean simples 🤓.
 
 ![Screenshot](./assets/img/example.png)
