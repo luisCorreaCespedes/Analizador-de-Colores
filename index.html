@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/png">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <script src="./assets/js/app.js"></script>
@@ -12,19 +13,19 @@
 </head>
 <body>
 
-    <div class="card text-center mt-5">
+    <div class="card text-center mt-5 bg-dark">
         <div class="card-header">
-            <h3>Analizador de Colores</h3>
+            <h2 class="text-light">Analizador de Colores</h2>
         </div>
         <div class="card-body">
-            <hr>
-            <h5 class="card-title" id="resultado">No hay nada que analizar...</h5>
-            <hr>
+            <hr class="bg-white">
+            <em><h5 class="card-title text-secondary" id="resultado">No hay nada que analizar...</h5></em>
+            <hr class="bg-white">
             <p class="card-text">
-                <h5>Seleccione un color</h5>
+                <h5 class="text-light">Seleccione un color</h5> <br>
                 <input class="rounded" type="color" id="hexadecimal" value="#FFFFFF">
-            </p>
-            <button class="btn btn-dark" id="btnAnalizar">Analizar color</button>
+            </p> <br>
+            <button class="btn btn-outline-light" id="btnAnalizar">Analizar color</button>
         </div>
         <div class="card-footer text-muted">
             INSTRUCCIONES: Seleccione un color del 'ColorPicker' <br>

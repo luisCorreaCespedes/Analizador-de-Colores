@@ -8,9 +8,13 @@ function analisis() {
     let dato = document.getElementById('hexadecimal').value;
     let arregloColores = transformar(dato);
     if (arregloColores == false) {
-        document.getElementById('resultado').innerHTML = 'No hay un valor ingresado.'
+        document.getElementById('resultado').innerHTML = `<div class="text-alert">No hay un valor ingresado.</div>`;
     } else {
-        document.getElementById('resultado').innerHTML = neuronalML(arregloColores[0], arregloColores[1], arregloColores[2]);
+        if (neuronalML(arregloColores[0], arregloColores[1], arregloColores[2]) == 'Es un color CLARO') {
+            document.getElementById('resultado').innerHTML = `<div style="color: rgb(230, 223, 171)"> ${neuronalML(arregloColores[0], arregloColores[1], arregloColores[2])} </div>`;
+        } else {
+            document.getElementById('resultado').innerHTML = `<div style="color: rgb(104, 136, 167)"> ${neuronalML(arregloColores[0], arregloColores[1], arregloColores[2])} </div>`;
+        }
     }
 };
 
@@ -52,20 +56,8 @@ function neuronalML(rColor, gColor, bColor) {
             'input': {'R':0.23, 'G':0, 'B':0.27},
             'output': {'Es un color OSCURO': 1}
         },
-        
     ];
     redNeuronal.train(entrenar);
-
-    /* PRUEBA
-    return valor = brain.likely({
-        // Rojo Oscuro
-        'R':0.51,
-        'G':0,
-        'B':0.01
-    }, redNeuronal);
-    114, 159, 156
-    */
-
     return valor = brain.likely({
         'R': rColor/255,
         'G': gColor/255,
